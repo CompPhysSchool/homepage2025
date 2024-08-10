@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    height: 80px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; /* フォントサイズを大きくする */
+    color: #fff;
+    margin: 0;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem; /* フォントサイズを大きくする */
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #328dd2;
+    height: 45px;
+    position: fixed;
+    top: 80px; /* headerの高さ分の位置調整 */
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+.nav-border {
+    flex: 1;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    border-top: 1.5px solid rgb(0, 0, 0);
+}
+.nav-items {
+    display: flex;
+}
+.dropbtn {
+    background-color: #328dd2;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 180px;          
+    height: 45px;      
+    text-align: center; 
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    border-top: 1.5px solid rgb(0, 0, 0);
+    border-right: 1.5px solid rgb(0, 0, 0);
+}
+.dropdown:first-child .dropbtn {
+    border-left: 1px solid rgb(0, 0, 0); /* 最初のボタンに左端の境界線 */
+}
+.nav-button:hover {
+    background-color: #e48108;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #e48108;
+}
+.advertisement {
+    display: flex;
+    align-items: flex-start; /* Flex-start to align buttons to the top */
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin-top: 130px; /* headerとnavの高さ分の余白を確保 */
+    text-align: left;
+    padding-left: 90px; /* コンテンツの周りに余白を追加 */
+    padding-right: 90px; /* コンテンツの周りに余白を追加 */
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu when the user clicks on the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.event-details {
+    display: flex;
+    align-items: flex-start; /* Flex-start to align buttons to the top */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0; /* ナビバーと他のコンテンツの間に余白を追加 */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-text {
+    margin-left: 4rem;
+    flex: 1;
+}
+
+.details-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.highlight-black {
+    color: rgb(0, 0, 0);
+}
+
+.houshiki{
+    font-size: 1.2rem; 
+    color:rgb(73, 73, 73)
+}
+.details-text p {
+    color: rgb(73, 73, 73);
+    font-size: 1.8rem; /* フォントサイズを大きくする */
+    margin: 0rem; /* pタグのデフォルトのマージンを0にする */
+    line-height: 1.2; /* 行間を調整する */
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px; /* ナビバーと他のコンテンツの間に余白を追加 */
+}
+.reception-period{
+    font-size: 1.2rem; /* フォントサイズを大きくする */
+    margin: 0.5rem; /* pタグのデフォルトのマージンを0にする */
+    line-height: 1.2; /* 行間を調整する */
+    text-align: left;
+}
+.detail-btn {
+    background-color: #328dd2;
+    color: white;
+    padding: 25px 90px; /* パディングを調整してボタンを大きくする */
+    font-size: 1.6rem; /* フォントサイズを大きくする */
+    text-decoration: none;
+    border-radius: 50px;
+    margin-right:60px;
+    margin-top: 0px; /* ボタンの間に十分なマージンを追加 */
+    text-align: center;
+    display: inline-block; 
+}
+
+.detail-btn:hover {
+    background-color: #e48108;
+}
+
+/* メディアクエリ: 画面が768px以下の場合（タブレットおよびスマートフォン） */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 2rem; /* 見出しのフォントサイズを縮小 */
+    }
+    .navbar {
+        flex-direction: column; /* ナビゲーションバーを縦に並べる */
+        height: auto; /* ナビゲーションバーの高さを自動調整 */
+    }
+    .nav-items {
+        flex-direction: column; /* ナビゲーションアイテムを縦に並べる */
+    }
+    .dropbtn {
+        width: 100%; /* ボタンをフル幅にする */
+        font-size: 18px; /* フォントサイズを調整 */
+    }
+    .details-text p {
+        font-size: 1.8rem; /* フォントサイズを小さくする */
+    }
+    .detail-btn {
+        font-size: 1.4rem; /* ボタンのフォントサイズを小さくする */
+        padding: 10px 20px; /* ボタンのパディングを縮小 */
+    }
+}
+
+/* メディアクエリ: 画面が480px以下の場合（スマートフォン） */
+
+
+/*
+.detail-btn[href="form_taimen.html"]:hover::after {
+    content: "2025年10月1日~12月21日";
+    position: absolute;
+    left: 50%; 
+    top: -25%; 
+    transform: translateX(-50%);
+    font-size: 1rem; 
+    background-color: #b6b8b9;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.detail-btn[href="form_online.html"]:hover::after {
+    content: "2025年10月1日~3月10日";
+    position: absolute;
+    left: 50%; 
+    top: -25%; 
+    transform: translateX(-50%);
+    font-size: 1rem; 
+    background-color: #b6b8b9;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+*/
