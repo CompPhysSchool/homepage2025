@@ -15,6 +15,45 @@
                 .catch(error => console.error('Error loading header:', error));
         });
     </script>
+    <script>
+        function toggleMenu() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth <= 1300) { // 画面幅が1300px以下の場合
+                if (navItems.style.display === 'flex') {
+                    navItems.style.display = 'none';
+                } else {
+                    navItems.style.display = 'flex';
+                    navItems.style.flexDirection = 'column'; // 縦に並べる
+                }
+            } else { // 画面幅が1300pxより大きい場合
+                navItems.style.display = 'flex'; // デフォルトの`flex`表示に戻す
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth > 1300) {
+                navItems.style.display = 'flex'; // 1300px以上の場合に自動で表示
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            } else if (navItems.style.display !== 'none') {
+                navItems.style.display = 'none'; // メニューが開いた状態から1300px以下に戻ると非表示にする
+            }
+        });
+        
+    </script>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('logos.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('logos-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,19 +62,7 @@
     <div id="header-container"></div>
     
     <main>
-        <section class="advertisement">
-            <div class="logo-container">
-                <img src="logos/NEC.png" alt="ロゴ2" class="large-logo">
-                <img src="logos/FIXSTARS.png" alt="ロゴ1">
-            </div>
-        </section>
-        <section class="advertisement">
-            <div class="logo-container">
-                <img src="logos/PFN.png" alt="ロゴ3">
-                <img src="logos/Proxima.png" alt="ロゴ4">
-                <img src="logos/Quemix.png" alt="ロゴ5">
-            </div>
-        </section>
+        <div id="logos-container"></div>
 
         <section class="event-details">
             <div class="details-text">
