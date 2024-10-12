@@ -31,43 +31,16 @@ h2 {
     margin: 0;
 }
 
-.navbar {
-    width: 100%;
-    background-color: #328dd2;
-    height: 45px;
-    position: fixed;
-    top: 80px; /* headerの高さ分の位置調整 */
-    left: 0;
-    display: flex;
-    justify-content: flex-end; /* アイテムを右に寄せる */
-    align-items: center; /* アイテムを垂直方向に中央揃え */
-    z-index: 999;
-}
+
 .nav-border {
     flex: 1;
     border-bottom: 1.5px solid rgb(0, 0, 0);
     border-top: 1.5px solid rgb(0, 0, 0);
 }
-.nav-items {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
+
     
 
-.dropbtn {
-    background-color: #333;
-    color: white;
-    padding: 5px;
-    font-size: 1.05rem;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    width: 130px;          
-    height: 40px;      
-    text-align: center; 
-    margin-left:0.5rem;
-}
+
 .nav-button:hover {
     background-color: #e48108;
 }
@@ -93,34 +66,7 @@ main {
 
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    margin-left:0.5rem;
-    background-color: #f9f9f9;
-    width: 11rem;
 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    font-size: 1rem;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu when the user clicks on the dropdown button */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .event-details {
     display: flex;
@@ -199,31 +145,129 @@ main {
     width: 40%; /* NECロゴの幅を指定 */
     height: auto; /* アスペクト比を維持 */
 }
-/* メディアクエリ: 画面が768px以下の場合（タブレットおよびスマートフォン） */
-@media (max-width: 768px) {
-    h1, h2 {
-        font-size: 2rem; /* 見出しのフォントサイズを縮小 */
-    }
-    .navbar {
-        flex-direction: column; /* ナビゲーションバーを縦に並べる */
-        height: auto; /* ナビゲーションバーの高さを自動調整 */
+
+
+@media (min-width: 1301px) {
+    .menu-btn {
+        display: none;
     }
     .nav-items {
-        flex-direction: column; /* ナビゲーションアイテムを縦に並べる */
+        display: flex;
+        align-items: center;
+        margin-left: auto;
     }
     .dropbtn {
-        width: 100%; /* ボタンをフル幅にする */
-        font-size: 18px; /* フォントサイズを調整 */
+        background-color: #333;
+        color: white;
+        padding: 5px;
+        font-size: 1.05rem;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        width: 130px;          
+        height: 40px;      
+        text-align: center; 
+        margin-left:0.5rem;
     }
-    .details-text p {
-        font-size: 1.8rem; /* フォントサイズを小さくする */
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-left:0.5rem;
+        background-color: #f9f9f9;
+        width: 11rem;
+
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
     }
-    .detail-btn {
-        font-size: 1.4rem; /* ボタンのフォントサイズを小さくする */
-        padding: 10px 20px; /* ボタンのパディングを縮小 */
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        font-size: 1rem;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    /* Show the dropdown menu when the user clicks on the dropdown button */
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 }
 
-/* メディアクエリ: 画面が480px以下の場合（スマートフォン） */
+/* For mobile screens */
+@media (max-width: 1300px) {
+    
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+        background-color: #333;
+        color: white;
+        font-size: 40px;
+        border: none;
+        padding: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    .nav-items {
+        display: none; /* Hide the menu initially */
+        flex-direction: column; /* Stack buttons vertically */
+        background-color: rgb(229, 229, 229); /* Background for dropdown menu */
+        position: absolute; /* Make sure it overlays the main content */
+        top: 80px; /* Below the header */
+        width: 100%; /* Full width on mobile */
+    }
 
+    .dropdown {
+        width: 100%; /* Ensure buttons take up full width */
+        text-align: center; /* Center align text */
+    }
+
+    .dropbtn {
+        background-color: #DCDCDC;
+        color: black;
+        padding: 10px;
+        font-size: 1.2rem;
+        width: 100%;
+        border: 0.1px solid black;
+        text-align: center;
+    }
+
+    .dropbtn:hover {
+        background-color: #dcc6ac;
+    }
+        /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        background-color: rgb(235, 198, 157);
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        border: 0.1px solid black;
+        color: black;
+        font-size: 1.2rem;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #e48108}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
 
