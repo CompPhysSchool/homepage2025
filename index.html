@@ -4,83 +4,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>計算物理春の学校 2025</title>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <h1>計算物理春の学校 2025</h1>
-    </header>
-    
-    <div class="navbar">
-        <div class="nav-border"></div>
-        <div class="nav-items">
-            <div class="dropdown">
-                <button class="dropbtn" onclick="window.location.href='index.html'">HOME</button>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">概要
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">開催目的</a>
-                    <a href="#">世話人</a>
-                    <a href="#">旅費補助について</a>
-
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">プログラム
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="time_table.html">日程</a>
-                    <a href="subjects.html">講義</a>
-                    <a href="#">グループセミナー</a>
-                    <a href="#">ポスターセッション</a>
-                    <a href="#">懇親会</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">参加登録
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">対面(旅費補助あり)</a>
-                    <a href="#">対面(旅費補助なし)</a>
-                    <a href="#">オンライン</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">協賛
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">協賛企業</a>
-                    <a href="#">協賛について</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">過去の様子
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="https://compphysspringschool2024.github.io/homepage2024/">2024年度</a>
-                    <a href="https://hohno0223.github.io/comp_phys_spring_school2023/">2023年度</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">お問い合わせ</button>
-            </div>
-        </div>
-        <div class="nav-border"></div>
-    </div>
+    <div id="header-container"></div>
     
     <main>
         <section class="advertisement">
-            <h2> 広告スペース</h2>
+            <div class="logo-container">
+                <img src="logos/NEC.png" alt="ロゴ2" class="large-logo">
+                <img src="logos/FIXSTARS.png" alt="ロゴ1">
+            </div>
         </section>
+        <section class="advertisement">
+            <div class="logo-container">
+                <img src="logos/PFN.png" alt="ロゴ3">
+                <img src="logos/Proxima.png" alt="ロゴ4">
+                <img src="logos/Quemix.png" alt="ロゴ5">
+            </div>
+        </section>
+
         <section class="event-details">
             <div class="details-text">
                 <h2>計算物理春の学校 2025</h2>
