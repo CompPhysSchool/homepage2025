@@ -39,7 +39,8 @@ h2 {
     top: 80px; /* headerの高さ分の位置調整 */
     left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* アイテムを右に寄せる */
+    align-items: center; /* アイテムを垂直方向に中央揃え */
     z-index: 999;
 }
 .nav-border {
@@ -49,23 +50,23 @@ h2 {
 }
 .nav-items {
     display: flex;
+    align-items: center;
+    margin-left: auto;
 }
+    
+
 .dropbtn {
-    background-color: #328dd2;
+    background-color: #333;
     color: white;
     padding: 5px;
-    font-size: 16px;
+    font-size: 1.05rem;
+    font-weight: bold;
     border: none;
     cursor: pointer;
-    width: 180px;          
-    height: 45px;      
+    width: 130px;          
+    height: 40px;      
     text-align: center; 
-    border-bottom: 1.5px solid rgb(0, 0, 0);
-    border-top: 1.5px solid rgb(0, 0, 0);
-    border-right: 1.5px solid rgb(0, 0, 0);
-}
-.dropdown:first-child .dropbtn {
-    border-left: 1px solid rgb(0, 0, 0); /* 最初のボタンに左端の境界線 */
+    margin-left:0.5rem;
 }
 .nav-button:hover {
     background-color: #e48108;
@@ -77,19 +78,18 @@ h2 {
     background-color: #e48108;
 }
 .advertisement {
-    display: flex;
     align-items: flex-start; /* Flex-start to align buttons to the top */
     justify-content: space-between;
-    padding: 50px;
-    background-color: #f9f9f9;
+    padding: 2rem;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 main {
-    margin-top: 130px; /* headerとnavの高さ分の余白を確保 */
+    margin-top: 6rem; /* headerとnavの高さ分の余白を確保 */
     text-align: left;
-    padding-left: 90px; /* コンテンツの周りに余白を追加 */
-    padding-right: 90px; /* コンテンツの周りに余白を追加 */
+    padding-left: 5rem; /* コンテンツの周りに余白を追加 */
+    padding-right: 5rem; /* コンテンツの周りに余白を追加 */
 
 }
 
@@ -97,8 +97,10 @@ main {
 .dropdown-content {
     display: none;
     position: absolute;
+    margin-left:0.5rem;
     background-color: #f9f9f9;
-    min-width: 180px;;
+    width: 11rem;
+
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -106,6 +108,7 @@ main {
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
+    font-size: 1rem;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -181,6 +184,21 @@ main {
     background-color: #e48108;
 }
 
+.logo-container {
+    display: flex;
+    justify-content: space-between; /* ロゴ間のスペースを均等に配置 */
+    align-items: center; /* 垂直方向で中央揃え */
+    gap: 5px; /* ロゴ同士の間に余白を追加 */
+}
+
+.logo-container img {
+    width: 25%; /* ロゴのサイズを調整 */
+    height: auto; /* 縦横比を維持 */
+}
+.logo-container img.large-logo {
+    width: 40%; /* NECロゴの幅を指定 */
+    height: auto; /* アスペクト比を維持 */
+}
 /* メディアクエリ: 画面が768px以下の場合（タブレットおよびスマートフォン） */
 @media (max-width: 768px) {
     h1, h2 {
@@ -209,32 +227,3 @@ main {
 /* メディアクエリ: 画面が480px以下の場合（スマートフォン） */
 
 
-/*
-.detail-btn[href="form_taimen.html"]:hover::after {
-    content: "2025年10月1日~12月21日";
-    position: absolute;
-    left: 50%; 
-    top: -25%; 
-    transform: translateX(-50%);
-    font-size: 1rem; 
-    background-color: #b6b8b9;
-    color: rgb(0, 0, 0);
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.detail-btn[href="form_online.html"]:hover::after {
-    content: "2025年10月1日~3月10日";
-    position: absolute;
-    left: 50%; 
-    top: -25%; 
-    transform: translateX(-50%);
-    font-size: 1rem; 
-    background-color: #b6b8b9;
-    color: rgb(0, 0, 0);
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-top: 10px; 
-}
-*/
