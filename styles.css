@@ -563,7 +563,7 @@ h2 {
     }
     .sentences h3 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem; /* フォントサイズを大きくする */
+        font-size: 1rem; /* フォントサイズを大きくする */
         color: rgb(0, 0, 0);
         margin-bottom: 2px !important; /* 段落同士の間隔を狭くする */
         margin-top: 2 !important; /* 上部の余白も調整 */
