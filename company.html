@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>計算物理春の学校 2025</title>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth <= 1300) { // 画面幅が1300px以下の場合
+                if (navItems.style.display === 'flex') {
+                    navItems.style.display = 'none';
+                } else {
+                    navItems.style.display = 'flex';
+                    navItems.style.flexDirection = 'column'; // 縦に並べる
+                }
+            } else { // 画面幅が1300pxより大きい場合
+                navItems.style.display = 'flex'; // デフォルトの`flex`表示に戻す
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth > 1300) {
+                navItems.style.display = 'flex'; // 1300px以上の場合に自動で表示
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            } else if (navItems.style.display !== 'none') {
+                navItems.style.display = 'none'; // メニューが開いた状態から1300px以下に戻ると非表示にする
+            }
+        });
+        
+    </script>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('logos.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('logos-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+    <main>
+    <section class="companies">
+        <h1>協賛団体一覧</h1>
+        <p>
+        計算物理春の学校（以下、本会議）は皆様からのご支援によって運営されています。ここに厚く御礼を申し上げます。   
+        </p>
+        <p>
+        いただきました協賛金を大切に使わせていただき、より充実した会議となるよう、準備局員一同努めて参ります。
+        </p>
+        <h2>協賛企業（順不同、敬称略）</h2>
+        <p class="name">株式会社 Fixstars Amplify</p>
+        <p class="name">クラシック・ジャパン</p>
+        <p class="name">日本電気株式会社</p>
+        <p class="name">株式会社 Preferred Networks</p>
+        <p class="name">株式会社 Proxima Technology</p>
+        <p class="name">株式会社 Quemix </p>
+        <h2>個人協賛（順不同）</h2>
+        <p class="name">齋藤雄介 様</p>
+        <p class="name">ごまふあざらし 様 </p>
+        
+        <h2>ご協賛をお考えの方へ </h2>
+        <p>
+            協賛のご検討誠にありがとうございます. 
+            <a href="kyousan.html">こちら</a>のページをご覧ください。
+        </p>
+
+    </section>
+    </main>
+
+</body>
+</html>

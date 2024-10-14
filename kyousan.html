@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>計算物理春の学校 2025</title>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth <= 1300) { // 画面幅が1300px以下の場合
+                if (navItems.style.display === 'flex') {
+                    navItems.style.display = 'none';
+                } else {
+                    navItems.style.display = 'flex';
+                    navItems.style.flexDirection = 'column'; // 縦に並べる
+                }
+            } else { // 画面幅が1300pxより大きい場合
+                navItems.style.display = 'flex'; // デフォルトの`flex`表示に戻す
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth > 1300) {
+                navItems.style.display = 'flex'; // 1300px以上の場合に自動で表示
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            } else if (navItems.style.display !== 'none') {
+                navItems.style.display = 'none'; // メニューが開いた状態から1300px以下に戻ると非表示にする
+            }
+        });
+        
+    </script>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('logos.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('logos-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="header-container"></div>
+  <main>
+
+    <section class="kyousan-sentence">
+        <h2>協賛のお願い</h2>
+        <p>
+        近年、AIや量子計算の発展はめざましく、計算物理学もその影響を受けています。本会議はそうした近年の大きな変化を新たな研究の芽とするために、2023年に発足しました。昨年、一昨年と大きな盛り上がりを見せ、非常に意義のある会議となりました。今後はより良い会議を目指して継続的に活動をしていきたいと考えています。
+        </p>
+        <p>
+        開催に際しては複数の科研費（学術変革領域研究(A)「学習物理学の創成」等）の補助を受けていますが、今後の継続的な運営のためには多様な財源を確保する必要がございます。そこで、本会議に興味を持ってくださった皆様にご協賛をお願いしております。協賛金は本会議の準備費用（オンラインツールの整備）や参加者交流の費用に使用させていただく予定です。
+        </p>
+        <p>
+        皆様からいただきました協賛金で会議をより充実させられるよう準備局員一同努めて参りますので、何卒よろしくお願い申し上げます。
+        </p>
+        <h2>
+            企業協賛
+        </h2>
+        <p>
+        本会議は企業の方との交流を促すことを取り組みの一つとしています。アカデミアと企業が活発に交流を重ねることで、新たな研究が加速されると考えており企業の皆様にはぜひ会議に参加していただきたく思っています。
+        </p>
+        <p>
+        企業協賛を通しては、貴社の研究や事業を参加者へ直接伝えることができます。主に学生が参加していることから、学生とのネットワークができ、会議としては今後の貴社の活動に貢献できると考えています。本会議の趣旨にご賛同いただき、ご支援をいただけますと幸いです。
+        </p>
+        <p>
+        以下企業協賛の方法となります。
+        </p>
+        <table>
+            <thead>
+              <tr>
+                <th>協賛方法</th>
+                <th>詳細</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>バナー広告</td>
+                <td>固定バナー（トップページ）</td>
+                <td>¥40,000</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>ローテーションバナー</td>
+                <td>¥20,000</td>
+              </tr>
+              <tr>
+                <td>メール広告</td>
+                <td>参加者が確定次第、参加者へ送付</td>
+                <td>¥60,000</td>
+              </tr>
+              <tr>
+                <td>フライヤー広告</td>
+                <td>本会議の受付にて参加者へ配布</td>
+                <td>¥80,000</td>
+              </tr>
+              <tr>
+                <td>ポスター展示</td>
+                <td>本会議期間中のポスターセッションにて展示</td>
+                <td>¥100,000</td>
+              </tr>
+              <tr>
+                <td>企業紹介</td>
+                <td>本会議期間中、15分間の企業紹介（対面もしくはオンライン）</td>
+                <td>¥150,000</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        <p>
+        詳細については以下のお申込フォームもしくはメールにてお問い合わせください。  
+        </p>
+        <h2>
+            お申込
+        </h2>
+        <p>
+            企業協賛をご検討いただけます場合は、下記のフォームをご記入いただくか、直接協賛担当者（石田哲朗）へご連絡いただきますようお願い申し上げます。
+        </p>
+        <p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBHH_sF7LViNaKyAR9LizAfoiUFwFP5Rd64jQhwHNiBLyD3g/viewform">
+                企業協賛の申し込みはここをクリック
+            </a> 
+        </p>
+        <h3>
+            本年度の企業協賛の受付は終了いたしました。来年度のご検討をお願い申し上げます。
+        </h3>
+        <h2>
+            個人協賛
+        </h2>
+        <p>
+            今年度の計算物理春の学校では、個人協賛を募集させていただいております。本会議の趣旨に
+            ご賛同いただき、ご協賛いただけます方は下記のフォームをお送りいただけますと幸いです。
+            ご協賛いただました方にはお礼といたしまして返礼品の送付を検討しております。
+        </p>
+            
+        <p>
+            協賛金額は一口<strong>1,000円</strong>から承っております。お申し込み締切は<strong>2024年12月27日</strong>とさせていただいております。
+        </p>
+
+        <p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf48tSBiYrKIMlPc28yr7zvikONikn8FvGdrCjVhOJ7FDVmqw/viewform">
+                個人協賛の申し込みはここをクリック
+            </a> 
+        </p>
+    <h2>
+        連絡先
+    </h2>
+    <p>
+        企業協賛・個人協賛についてのお問合せは以下のメールアドレスまでご連絡ください。
+    </p>
+    <p>
+      compphysschool_@_gm (_@_→@, gm→gmail.com) (協賛担当:石田哲郎)
+    </p>
+    </section>
+</main>
+   
+</body>
+</html>

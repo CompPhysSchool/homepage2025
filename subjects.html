@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>計算物理春の学校 2025</title>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth <= 1300) { // 画面幅が1300px以下の場合
+                if (navItems.style.display === 'flex') {
+                    navItems.style.display = 'none';
+                } else {
+                    navItems.style.display = 'flex';
+                    navItems.style.flexDirection = 'column'; // 縦に並べる
+                }
+            } else { // 画面幅が1300pxより大きい場合
+                navItems.style.display = 'flex'; // デフォルトの`flex`表示に戻す
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var navItems = document.querySelector('.nav-items');
+            if (window.innerWidth > 1300) {
+                navItems.style.display = 'flex'; // 1300px以上の場合に自動で表示
+                navItems.style.flexDirection = 'row'; // 横並びに戻す
+            } else if (navItems.style.display !== 'none') {
+                navItems.style.display = 'none'; // メニューが開いた状態から1300px以下に戻ると非表示にする
+            }
+        });
+        
+    </script>
+    <script>
+        // JavaScriptで外部HTMLをインクルード
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('logos.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('logos-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <main>
+        <div class="container" id="量子計算入門">
+            <div class="subject">
+            <h3>講師：御手洗 光祐 (大阪大学)</h3>
+            <h3>題目：量子計算入門</h3>
+                <h3>講義内容</h3>
+                <p>量子コンピュータは、量子重ね合わせなど量子力学の基本原理を計算に応用することにより、特定の計算タスクを従来のコンピュータよりも高速に解くことができる計算機です。本講義では、量子ビットや量子ゲートなど、量子計算の基礎的な知識を抑えたのち、量子加速が期待されている代表的な量子アルゴリズムをいくつか紹介します。講義の最後には量子プログラミングのハンズオンも予定しています。
+                </p>
+                <h3>事前知識</h3>
+                <p>テンソル積を含む線形代数を理解していることを前提に講義を進めます。ハンズオンはpython で行う予定です。
+                </p>
+            </div>
+        </div>
+        <div class="container" id="エラー耐性">
+            <div class="subject">
+            <h3>講師：松下 雄一郎 (Quemix)</h3>
+            <h3>題目：エラー耐性量子コンピュータによる量子化学計算の最近の展開</h3>
+                <h3>講義内容</h3>
+                <p>我々の会社では、エラー耐性量子コンピュータ（FTQC）に向けた量子アルゴリズム開発を行っている。特に、量子コンピュータ初期の適用先として量子化学計算が挙げられており、我々も量子化学計算むけのFTQCアルゴリズムの開発を行ってきた。その中で、古典コンピュータでも知られた"虚時間発展法"をFTQC上で実行するアルゴリズム"確率的虚時間発展法（PITE: Probabilitstic Imaginary-Time Evolution）"を開発した[1-4]。量子コンピュータの原理から始めて、量子アルゴリズムの作り方、量子化学計算理論、量子コンピュータがどのように量子化学計算を発展させるか、を説明する。
+                <p>[1] Phys. Rev. Research 4, 033121(2022).</p>
+                <p>[2] Phys. Rev. Research 5, 043048(2023).</p>
+                <p>[3] npj Quantum Information 9, 112(2023).</p> 
+                <p> [4] Phys. Rev. Research 6, L022041(2024).</p>
+                </p>
+                <h3>事前知識</h3>
+                <p>
+                　準備中
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="subject" id="第一原理">
+            <h3>講師：明石 遼介 (東京大学)</h3>
+            <h3>題目：密度汎関数理論の基礎と応用</h3>
+                <h3>講義内容</h3>
+                <p>第一原理計算に基づく物質の電子状態シミュレーションは，今や物性物理研究に欠かせないインフラとなっている．本講義では，シミュレーションにおいて実用的な計算精度を達成する基礎となっている密度汎関数理論について，その構造と主要な成果を概観し，さらなる手法改善にとりくむための基礎知識を提供する．また，密度汎関数理論にもとづく第一原理計算の応用例についても，講演者の研究に関連する話題を主として紹介する．
+                </p>
+                <h3>事前知識</h3>
+                <p>第二量子化，学部程度の統計力学</p>
+                <p>参考文献:</p>
+                <p>1, W. Kohn, “Nobel Lecture: Electronic structure of matter—wave
+                    functions and density functionals”, Rev. Mod. Phys. 71, 1253</p>
+                <p>2, Y. Nomura and R. Akashi, “Density functional theory”, Encyclopedia
+                    of Condensed Matter Physics (Second Edition) Vol. 1, 867 (2024)
+                    (unpublished ver. is available as arXiv:2210.07647)</p>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="subject" id="テンソル1">
+            <h3>講師：秋山 進一郎 (筑波大学)</h3>
+            <h3>題目：テンソルネットワークと繰り込み群</h3>
+                <h3>講義内容</h3>
+                <p>　準備中
+                </p>
+                <h3>事前知識</h3>
+                <p>　準備中
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="subject">
+            <h3 id="素粒子">
+                準備中
+            </h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="subject" id="量子化学">
+            <h3>講師：髙島 千波 (早稲田大学)</h3>
+            <h3>題目：量子化学入門</h3>
+                <h3>講義内容</h3>
+                <p>　準備中
+                </p>
+                <h3>事前知識</h3>
+                <p>　準備中
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="subject" id="DMFT">
+            <h3>講師：大槻 純也 (岡山大学)</h3>
+            <h3>題目：準備中</h3>
+                <h3>講義内容</h3>
+                <p>　準備中
+                </p>
+                <h3>事前知識</h3>
+                <p>　準備中
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="subject" id="テンソル2">
+            <h3>講師：引原 俊哉 (群馬大学)</h3>
+            <h3>題目：準備中</h3>
+                <h3>講義内容</h3>
+                <p>　準備中
+                </p>
+                <h3>事前知識</h3>
+                <p>　準備中
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="subject" id="機械学習">
+            <h3>講師：田中 章詞 (理研)</h3>
+            <h3>題目：準備中</h3>
+                <h3>講義内容</h3>
+                <p>　準備中
+                </p>
+                <h3>事前知識</h3>
+                <p>　準備中
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="subject" id="GPU">
+            <h3>講師：Nvidia</h3>
+            <h3>題目：GPU コンピューティング入門</h3>
+                <h3>講義内容</h3>
+                <p>　準備中
+                </p>
+                <h3>事前知識</h3>
+                <p>　準備中
+                </p>
+            </div>
+        </div>
+
+        <div id="logos-container"></div>
+    </main>
+    
+</body>
+</html>
