@@ -33,7 +33,7 @@ h2 {
     border-top: 1.5px solid rgb(0, 0, 0);
 }
 
-    
+
 
 
 .nav-button:hover {
@@ -61,7 +61,7 @@ h2 {
     margin-bottom: 1px !important; /* 段落同士の間隔を狭くする */
     margin-top: 1px !important; /* 上部の余白も調整 */
     color: #333;
-    
+
 }
 .time_table table {
     width: 100%;
@@ -125,7 +125,7 @@ h2 {
     align-items: flex-start; /* Flex-start to align buttons to the top */
     justify-content: space-between;
     padding: 1rem;
-    background-color: white; 
+    background-color: white;
     margin: 20px 0; /* ナビバーと他のコンテンツの間に余白を追加 */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -134,7 +134,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem; /* フォントサイズを大きくする */
     color: rgb(0, 0, 0);
-    text-align: center ; 
+    text-align: center ;
     margin: 0;
 }
 .kyousan-sentence h2 {
@@ -155,18 +155,18 @@ h2 {
     width: 100%;
     border-collapse: collapse;
   }
-  
+
 .kyousan-sentence th, td {
     padding: 12px;
     text-align: center;
     border: 1px solid #ddd;
   }
-  
+
 .kyousan-sentence th {
     background-color: #f2f2f2;
     font-weight: bold;
   }
-  
+
 .kyousan-sentence  tbody tr:nth-child(even) {
     background-color: #f9f9f9;
   }
@@ -176,7 +176,7 @@ h2 {
     align-items: flex-start; /* Flex-start to align buttons to the top */
     justify-content: space-between;
     padding: 1rem;
-    background-color: white; 
+    background-color: white;
     margin: 20px 0; /* ナビバーと他のコンテンツの間に余白を追加 */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -185,7 +185,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem; /* フォントサイズを大きくする */
     color: rgb(0, 0, 0);
-    text-align: center ; 
+    text-align: center ;
     margin: 0;
 }
 .companies h2 {
@@ -194,7 +194,7 @@ h2 {
     font-size: 2rem; /* フォントサイズを大きくする */
     color: rgb(0, 0, 0);
     margin: 0;
-    text-align: center ; 
+    text-align: center ;
 }
 .companies .name {
     padding-top: 1rem;
@@ -205,7 +205,7 @@ h2 {
     text-align: center ;
 }
 .companies p {
-    text-align: center ; 
+    text-align: center ;
     margin-bottom: 15px; /* 各段落の間にスペースを設ける */
     line-height: 1.6; /* 行間を広くして読みやすくする */
     font-size: 1.1rem; /* テキストを少し大きく */
@@ -215,6 +215,7 @@ h2 {
 /*event-details*/
 .event-details {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start; /* Flex-start to align buttons to the top */
     justify-content: space-between;
     padding: 20px;
@@ -233,19 +234,14 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem; /* フォントサイズを大きくする */
     color: rgb(0, 0, 0);
-    text-align: left ; 
+    text-align: left ;
     margin: 0;
-}
-.details-buttons {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
 }
 .highlight-black {
     color: rgb(0, 0, 0);
 }
 .houshiki{
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     color:rgb(73, 73, 73)
 }
 .details-text p {
@@ -270,7 +266,7 @@ h2 {
     color: white;
     width: 100%; /* event-details の幅の 80% に設定 */
     height: auto; /* 高さは自動調整 */
-    padding: 20px; 
+    padding: 20px;
     font-size: 1.6rem; /* フォントサイズを大きくする */
     text-decoration: none;
     border-radius: 50px;
@@ -278,6 +274,16 @@ h2 {
     text-align: center;
     display: inline-block;
     box-sizing: border-box; /* パディングとボーダーを幅の中に含める */
+}
+.poster {
+    flex: 1 1 500px;
+    text-align: center;
+    max-width: 60%;
+}
+.poster img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
 }
 
 
@@ -287,7 +293,7 @@ h2 {
         text-align: left;
         padding-left: 2rem; /* コンテンツの周りに余白を追加 */
         padding-right: 2rem; /* コンテンツの周りに余白を追加 */
-    
+
     }
     h1 {
         font-family: 'Roboto', sans-serif;
@@ -312,9 +318,9 @@ h2 {
         font-weight: bold;
         border: none;
         cursor: pointer;
-        width: 130px;          
-        height: 40px;      
-        text-align: center; 
+        width: 130px;
+        height: 40px;
+        text-align: center;
         margin-left:0.5rem;
     }
     /* Dropdown content (hidden by default) */
@@ -385,7 +391,7 @@ h2 {
         font-family: 'Roboto', sans-serif;
         font-size: 3rem; /* フォントサイズを大きくする */
         color: rgb(0, 0, 0);
-        text-align: center ; 
+        text-align: center ;
         margin: 0;
     }
     .sentences h2 {
@@ -417,12 +423,12 @@ h2 {
     .container {
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
-        align-items: flex-start; 
+        align-items: flex-start;
         margin: auto;
         overflow: hidden;
         padding: 20px;
         margin-top: 2rem ;
-        background-color: white ; 
+        background-color: white ;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -456,7 +462,7 @@ h2 {
         text-align: left;
         padding-left: 1rem; /* コンテンツの周りに余白を追加 */
         padding-right: 1rem; /* コンテンツの周りに余白を追加 */
-    
+
     }
     h1 {
     font-family: 'Roboto', sans-serif;
@@ -479,7 +485,7 @@ h2 {
     .menu-btn:hover {
         background-color: #08b8e4;
     }
-    
+
     .nav-items {
         display: none; /* Hide the menu initially */
         flex-direction: column; /* Stack buttons vertically */
@@ -487,7 +493,7 @@ h2 {
         position: absolute; /* Make sure it overlays the main content */
         top: 80px; /* Below the header */
         width: 100%; /* Full width on mobile */
-        left: 0; 
+        left: 0;
     }
 
     .dropdown {
@@ -552,7 +558,7 @@ h2 {
         font-family: 'Roboto', sans-serif;
         font-size: 3rem; /* フォントサイズを大きくする */
         color: rgb(0, 0, 0);
-        text-align: center ; 
+        text-align: center ;
         margin: 0;
     }
     .sentences h2 {
@@ -572,7 +578,7 @@ h2 {
     .sentences p {
         margin-bottom: 15px; /* 各段落の間にスペースを設ける */
         line-height: 1.6; /* 行間を広くして読みやすくする */
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
         margin-bottom: 0px !important; /* 段落同士の間隔を狭くする */
         margin-top: 0 !important; /* 上部の余白も調整 */
         color: black; /* テキストの色を少し淡く */
@@ -610,12 +616,12 @@ h2 {
     .container {
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
-        align-items: flex-start; 
+        align-items: flex-start;
         margin: auto;
         overflow: hidden;
         padding: 20px;
         margin-top: 2rem ;
-        background-color: white ; 
+        background-color: white ;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -669,13 +675,8 @@ h2 {
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem; /* フォントサイズを大きくする */
         color: rgb(0, 0, 0);
-        text-align: center ; 
+        text-align: center ;
         margin: 0;
-    }
-    .details-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* ボタンを中央揃え */
     }
 
     .highlight-black {
@@ -683,7 +684,7 @@ h2 {
     }
 
     .houshiki {
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
         color: rgb(73, 73, 73);
     }
 
@@ -721,7 +722,7 @@ h2 {
         display: block;
         align-self: center; /* 親要素の中央に揃える */
     }
-    
+
     .detail-btn:hover {
         background-color: #e48108;
     }
@@ -742,7 +743,6 @@ h2 {
         margin-bottom: 1px !important; /* 段落同士の間隔を狭くする */
         margin-top: 1px !important; /* 上部の余白も調整 */
         color: #333;
-        
     }
     .time_table table {
         width: 100%;
