@@ -9,5 +9,5 @@
 
 1. brew や npm 等を用いて http-server をインストールする．
 2. homepage2025 のルートディレクトリに移動する．
-3. `http-server` を実行する．
+3. `npx http-server -o` を実行する．
 4. ブラウザで `http://192.168.53.21:8080` にアクセスする．
