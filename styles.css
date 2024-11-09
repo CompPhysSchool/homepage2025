@@ -18,35 +18,26 @@ header {
     justify-content: flex-start;
     align-items: center;
 }
-
 h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem; /* フォントサイズを大きくする */
     color: rgb(0, 0, 0);
     margin: 0;
 }
-
-
 .nav-border {
     flex: 1;
     border-bottom: 1.5px solid rgb(0, 0, 0);
     border-top: 1.5px solid rgb(0, 0, 0);
 }
-
-
-
-
 .nav-button:hover {
     background-color: #e48108;
 }
-
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #e48108;
 }
 /*time table */
-
 .time_table{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -72,13 +63,10 @@ h2 {
     border-radius: 8px;
     overflow: hidden;
 }
-
 .time_table thead {
     background-color: #4CAF50;
     color: white;
 }
-
-
 .time_table th, .time_table td {
     width: 150px; /* セルの幅を固定 */
     height: 50px; /* セルの高さを固定 */
@@ -86,31 +74,24 @@ h2 {
     text-align: center;
     vertical-align: middle;
 }
-
 .time_table th {
     font-size: 1rem;
     text-transform: uppercase;
 }
-
 .time_table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
-
 .time_table td {
     font-size: 1rem;
     color: #555;
 }
-
 .time_table td > br {
     margin-bottom: 5px;
 }
-
 .time_table .split-cell {
     display: flex;
     justify-content: space-around;
 }
-
 .time_table .split-cell > div {
     width: 48%;
     padding: 10px;
@@ -122,7 +103,7 @@ h2 {
 
 /*kyousan*/
 .kyousan-sentence {
-    align-items: flex-start; /* Flex-start to align buttons to the top */
+    align-items: flex-start;
     justify-content: space-between;
     padding: 1rem;
     background-color: white;
@@ -150,30 +131,26 @@ h2 {
     font-size: 1.1rem; /* テキストを少し大きく */
     color: #495057; /* テキストの色を少し淡く */
 }
-
 .kyousan-sentence table {
     width: 100%;
     border-collapse: collapse;
-  }
-
+}
 .kyousan-sentence th, td {
     padding: 12px;
     text-align: center;
     border: 1px solid #ddd;
-  }
-
+}
 .kyousan-sentence th {
     background-color: #f2f2f2;
     font-weight: bold;
-  }
-
+}
 .kyousan-sentence  tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-  }
-/*companies*/
+}
 
+/*companies*/
 .companies {
-    align-items: flex-start; /* Flex-start to align buttons to the top */
+    align-items: flex-start;
     justify-content: space-between;
     padding: 1rem;
     background-color: white;
@@ -216,7 +193,7 @@ h2 {
 .event-details {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start; /* Flex-start to align buttons to the top */
+    align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
     background-color: white;
@@ -276,16 +253,20 @@ h2 {
     box-sizing: border-box; /* パディングとボーダーを幅の中に含める */
 }
 .poster {
-    flex: 1 1 500px;
-    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
     max-width: 60%;
+    margin: 0 auto;
 }
 .poster img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
     height: auto;
     max-width: 400px;
+    min-width: 300px;
 }
-
 
 @media (min-width: 1301px) {
     main {
@@ -301,7 +282,6 @@ h2 {
         color: #fff;
         margin: 0;
     }
-
     .menu-btn {
         display: none;
     }
@@ -330,7 +310,6 @@ h2 {
         margin-left:0.5rem;
         background-color: #f9f9f9;
         width: 11rem;
-
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
@@ -383,7 +362,7 @@ h2 {
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
 
-        align-items: flex-start; /* Flex-start to align buttons to the top */
+        align-items: flex-start;
         justify-content: space-between;
         padding: 20px;
         background-color: white;
@@ -419,7 +398,6 @@ h2 {
         margin-bottom: 8px !important; /* 段落同士の間隔を狭くする */
         margin-top: 0 !important; /* 上部の余白も調整 */
     }
-
     .detail-btn:hover {
         background-color: #e48108;
     }
@@ -435,11 +413,9 @@ h2 {
         background-color: white ;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
     .subject {
         margin-bottom: 30px;
     }
-
     .subject h2 {
         font-size: 2rem;
         padding-bottom: 10px;
@@ -451,7 +427,6 @@ h2 {
         padding-bottom: 10px;
         margin-bottom: 15px;
     }
-
     .subject p {
         font-size: 1rem;
         margin: 0 0 10px 0;
@@ -489,7 +464,6 @@ h2 {
     .menu-btn:hover {
         background-color: #08b8e4;
     }
-
     .nav-items {
         display: none; /* Hide the menu initially */
         flex-direction: column; /* Stack buttons vertically */
@@ -499,12 +473,10 @@ h2 {
         width: 100%; /* Full width on mobile */
         left: 0;
     }
-
     .dropdown {
         width: 100%; /* Ensure buttons take up full width */
         text-align: center; /* Center align text */
     }
-
     .dropbtn {
         background-color: #DCDCDC;
         color: black;
@@ -514,11 +486,10 @@ h2 {
         border: 0.1px solid black;
         text-align: center;
     }
-
     .dropbtn:hover {
         background-color: #dcc6ac;
     }
-        /* Dropdown content (hidden by default) */
+    /* Dropdown content (hidden by default) */
     .dropdown-content {
         display: none;
         background-color: rgb(235, 198, 157);
@@ -528,7 +499,6 @@ h2 {
         border: none;
         text-align: center;
     }
-
     /* Links inside the dropdown */
     .dropdown-content a {
         border: 0.1px solid black;
@@ -538,10 +508,10 @@ h2 {
         text-decoration: none;
         display: block;
     }
-
     /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #e48108}
-
+    .dropdown-content a:hover {
+        background-color: #e48108
+    }
     .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -549,8 +519,7 @@ h2 {
     .sentences {
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
-
-        align-items: flex-start; /* Flex-start to align buttons to the top */
+        align-items: flex-start;
         justify-content: space-between;
         padding: 20px;
         background-color: white;
@@ -592,7 +561,6 @@ h2 {
         font-size: 0.8rem; /* テキストを少し大きく */
         color: black; /* テキストの色を少し淡く */
     }
-
     /* logos */
     .advertisement {
         display: flex;
@@ -618,7 +586,6 @@ h2 {
         object-fit: contain;
         max-width: none;
     }
-
     /*subjects*/
     .container {
         border-top: 5px solid grey;
@@ -635,7 +602,6 @@ h2 {
     .subject {
         margin-bottom: 30px;
     }
-
     .subject h2 {
         font-size: 2rem;
         padding-bottom: 10px;
@@ -647,7 +613,6 @@ h2 {
         padding-bottom: 10px;
         margin-bottom: 15px;
     }
-
     .subject p {
         font-size: 0.8rem;
         margin: 0 0 10px 0;
@@ -661,9 +626,9 @@ h2 {
     /*event-details for phones*/
     .event-details {
         display: flex;
-        align-items: center; /* 垂直方向の中央揃え */
-        flex-direction: column; /* 縦並びに変更 */
-        justify-content: center; /* 水平方向の中央揃え */
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         padding: 20px;
         background-color: white;
         margin: 20px 0;
@@ -672,7 +637,6 @@ h2 {
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
     }
-
     .details-text {
         margin-left: 1rem;
         flex: 1;
@@ -685,36 +649,30 @@ h2 {
         text-align: center ;
         margin: 0;
     }
-
     .highlight-black {
         color: rgb(0, 0, 0);
     }
-
     .houshiki {
         font-size: 0.7rem;
         color: rgb(73, 73, 73);
     }
-
     .details-text p {
         color: rgb(73, 73, 73);
         font-size: 0.7rem;
         margin: 0;
         line-height: 1.2;
     }
-
     .button-container {
         display: flex;
         flex-direction: column;
         margin-bottom: 5px;
     }
-
     .reception-period {
         font-size: 0.80rem;
         margin: 0.7rem;
         line-height: 1.2;
         text-align: center;
     }
-
     .detail-btn {
         background-color: #328dd2;
         color: white;
@@ -729,12 +687,10 @@ h2 {
         display: block;
         align-self: center; /* 親要素の中央に揃える */
     }
-
     .detail-btn:hover {
         background-color: #e48108;
     }
     /*time table */
-
     .time_table{
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -760,13 +716,10 @@ h2 {
         border-radius: 8px;
         overflow: hidden;
     }
-
     .time_table thead {
         background-color: #4CAF50;
         color: white;
     }
-
-
     .time_table th, .time_table td {
         width: 150px; /* セルの幅を固定 */
         height: 50px; /* セルの高さを固定 */
@@ -774,31 +727,24 @@ h2 {
         text-align: center;
         vertical-align: middle;
     }
-
     .time_table th {
         font-size: 0.7rem;
         text-transform: uppercase;
     }
-
     .time_table tbody tr:nth-child(even) {
         background-color: #f2f2f2;
     }
-
-
     .time_table td {
         font-size: 0.7rem;
         color: #555;
     }
-
     .time_table td > br {
         margin-bottom: 5px;
     }
-
     .time_table .split-cell {
         display: flex;
         justify-content: space-around;
     }
-
     .time_table .split-cell > div {
         width: 48%;
         padding: 10px;
@@ -807,5 +753,4 @@ h2 {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         text-align: center;
     }
-
 }
