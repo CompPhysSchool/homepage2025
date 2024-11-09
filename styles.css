@@ -20,7 +20,7 @@ header {
 }
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem; /* フォントサイズを大きくする */
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     margin: 0;
 }
@@ -113,7 +113,7 @@ h2 {
 }
 .kyousan-sentence h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem; /* フォントサイズを大きくする */
+    font-size: 3rem;
     color: rgb(0, 0, 0);
     text-align: center ;
     margin: 0;
@@ -121,7 +121,7 @@ h2 {
 .kyousan-sentence h2 {
     border-top: 5px solid black;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem; /* フォントサイズを大きくする */
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     margin: 0;
 }
@@ -160,7 +160,7 @@ h2 {
 }
 .companies h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem; /* フォントサイズを大きくする */
+    font-size: 3rem;
     color: rgb(0, 0, 0);
     text-align: center ;
     margin: 0;
@@ -168,7 +168,7 @@ h2 {
 .companies h2 {
     padding-top: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem; /* フォントサイズを大きくする */
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     margin: 0;
     text-align: center ;
@@ -176,7 +176,7 @@ h2 {
 .companies .name {
     padding-top: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem; /* フォントサイズを大きくする */
+    font-size: 1.2rem;
     color: rgb(0, 0, 0);
     margin: 0;
     text-align: center ;
@@ -193,7 +193,7 @@ h2 {
 .event-details {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: white;
@@ -202,6 +202,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
+    gap: 1rem;
 }
 .details-text {
     margin-left: 4rem;
@@ -209,59 +210,59 @@ h2 {
 }
 .details-text h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem; /* フォントサイズを大きくする */
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: left ;
     margin: 0;
 }
+.event-info .deadlines .poster {
+    display: flex;
+    justify-content: center;
+}
 .highlight-black {
     color: rgb(0, 0, 0);
 }
-.houshiki{
-    font-size: 1.2rem;
-    color:rgb(73, 73, 73)
-}
 .details-text p {
     color: rgb(73, 73, 73);
-    font-size: 1.8rem; /* フォントサイズを大きくする */
-    margin: 0rem; /* pタグのデフォルトのマージンを0にする */
-    line-height: 1.2; /* 行間を調整する */
+    font-size: 1.8rem;
+    margin: 0rem;
+    min-width: auto;
+    line-height: 1.6;
 }
 .button-container {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
     margin-bottom: 5px; /* ナビバーと他のコンテンツの間に余白を追加 */
 }
-.reception-period{
-    font-size: 1.2rem; /* フォントサイズを大きくする */
-    margin: 0.5rem; /* pタグのデフォルトのマージンを0にする */
-    line-height: 1.2; /* 行間を調整する */
+.button-container p {
+    line-height: 1.6;
+}
+.reception-period {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    line-height: 1.2;
     text-align: left;
 }
 .detail-btn {
     background-color: #328dd2;
     color: white;
-    width: 100%; /* event-details の幅の 80% に設定 */
-    height: auto; /* 高さは自動調整 */
+    width: 100%;
+    height: auto;
     padding: 20px;
-    font-size: 1.6rem; /* フォントサイズを大きくする */
+    font-size: 1.6rem;
     text-decoration: none;
     border-radius: 50px;
     margin-top: 0px;
     text-align: center;
     display: inline-block;
-    box-sizing: border-box; /* パディングとボーダーを幅の中に含める */
-}
-.poster {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    max-width: 60%;
-    margin: 0 auto;
+    box-sizing: border-box;
 }
 .poster img {
     display: block;
     margin: 0 auto;
+    align-content: center;
+    justify-content: center;
     width: 100%;
     height: auto;
     max-width: 400px;
@@ -278,7 +279,7 @@ h2 {
     }
     h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: 2rem; /* フォントサイズを大きくする */
+        font-size: 2rem;
         color: #fff;
         margin: 0;
     }
@@ -372,20 +373,20 @@ h2 {
     }
     .sentences h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: 3rem; /* フォントサイズを大きくする */
+        font-size: 3rem;
         color: rgb(0, 0, 0);
         text-align: center ;
         margin: 0;
     }
     .sentences h2 {
         font-family: 'Roboto', sans-serif;
-        font-size: 2rem; /* フォントサイズを大きくする */
+        font-size: 2rem;
         color: rgb(0, 0, 0);
         margin: 0;
     }
     .sentences h3 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.5rem; /* フォントサイズを大きくする */
+        font-size: 1.5rem;
         color: rgb(0, 0, 0);
         margin-bottom: 2px !important; /* 段落同士の間隔を狭くする */
         margin-top: 2 !important; /* 上部の余白も調整 */
@@ -445,7 +446,7 @@ h2 {
     }
     h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem; /* フォントサイズを大きくする */
+    font-size: 1.5rem;
     color: #fff;
     margin: 0;
     }
@@ -529,20 +530,20 @@ h2 {
     }
     .sentences h1 {
         font-family: 'Roboto', sans-serif;
-        font-size: 3rem; /* フォントサイズを大きくする */
+        font-size: 3rem;
         color: rgb(0, 0, 0);
         text-align: center ;
         margin: 0;
     }
     .sentences h2 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.5rem; /* フォントサイズを大きくする */
+        font-size: 1.5rem;
         color: rgb(0, 0, 0);
         margin: 0;
     }
     .sentences h3 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem; /* フォントサイズを大きくする */
+        font-size: 1rem;
         color: rgb(0, 0, 0);
         margin-bottom: 2px !important; /* 段落同士の間隔を狭くする */
         margin-top: 2 !important; /* 上部の余白も調整 */
@@ -636,15 +637,16 @@ h2 {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
+        gap: 1rem;
     }
     .details-text {
         margin-left: 1rem;
         flex: 1;
-        text-align: center; /* テキストも中央揃え */
+        text-align: center;
     }
     .details-text h2{
         font-family: 'Roboto', sans-serif;
-        font-size: 1.5rem; /* フォントサイズを大きくする */
+        font-size: 1.5rem;
         color: rgb(0, 0, 0);
         text-align: center ;
         margin: 0;
@@ -652,15 +654,12 @@ h2 {
     .highlight-black {
         color: rgb(0, 0, 0);
     }
-    .houshiki {
-        font-size: 0.7rem;
-        color: rgb(73, 73, 73);
-    }
     .details-text p {
         color: rgb(73, 73, 73);
         font-size: 0.7rem;
         margin: 0;
-        line-height: 1.2;
+        line-height: 1.6;
+        min-width: auto;
     }
     .button-container {
         display: flex;
@@ -676,7 +675,7 @@ h2 {
     .detail-btn {
         background-color: #328dd2;
         color: white;
-        height: auto; /* 高さは自動調整 */
+        height: auto;
         width:300px;
         padding: 20px; /* パディングを使ってボタンの内部余白を調整 */
         font-size: 1.4rem;
