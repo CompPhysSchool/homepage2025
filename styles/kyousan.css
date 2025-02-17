@@ -1,0 +1,45 @@
+.kyousan-sentence {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    margin: 20px 0; /* ナビバーと他のコンテンツの間に余白を追加 */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.kyousan-sentence h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-align: center ;
+    margin: 0;
+}
+.kyousan-sentence h2 {
+    border-top: 5px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+.kyousan-sentence p {
+    margin-bottom: 15px; /* 各段落の間にスペースを設ける */
+    line-height: 1.6; /* 行間を広くして読みやすくする */
+    font-size: 1.1rem; /* テキストを少し大きく */
+    color: #495057; /* テキストの色を少し淡く */
+}
+.kyousan-sentence table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.kyousan-sentence th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.kyousan-sentence th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.kyousan-sentence  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
