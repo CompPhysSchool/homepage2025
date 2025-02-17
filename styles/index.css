@@ -1,0 +1,79 @@
+/*event-details*/
+.event-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0; /* ナビバーと他のコンテンツの間に余白を追加 */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+    gap: 1rem;
+}
+.details-text {
+    margin-left: 4rem;
+    flex: 1;
+}
+.details-text h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: left ;
+    margin: 0;
+}
+.event-info .deadlines .poster {
+    display: flex;
+    justify-content: center;
+}
+.highlight-black {
+    color: rgb(0, 0, 0);
+}
+.details-text p {
+    color: rgb(73, 73, 73);
+    font-size: 1.8rem;
+    margin: 0rem;
+    min-width: auto;
+    line-height: 1.6;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-bottom: 5px; /* ナビバーと他のコンテンツの間に余白を追加 */
+}
+.button-container p {
+    line-height: 1.6;
+}
+.reception-period {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    line-height: 1.2;
+    text-align: left;
+}
+.detail-btn {
+    background-color: #328dd2;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 0px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.poster img {
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    min-width: 300px;
+}
