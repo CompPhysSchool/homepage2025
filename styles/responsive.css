@@ -307,6 +307,8 @@
         margin-top: 2rem;
         background-color: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
     .subject {
         margin-bottom: 30px;
